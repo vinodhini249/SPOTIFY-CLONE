@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <header>
+        <h1>Spotify Playlist</h1>
+    </header>
+
+    <main>
+        <!-- Song Upload Form -->
+        <section id="form-section">
+            <form id="songForm" class="spotify-form">
+                <h2>Add a New Song</h2>
+                <input type="text" id="songName" placeholder="Song Name" required>
+                <input type="text" id="artistName" placeholder="Artist Name" required>
+                <button type="button" id="uploadImageBtn">Upload Image</button>
+                <input type="file" id="songImageInput" accept="image/*" style="display:none;" required>
+                <button type="button" id="uploadSongBtn">Upload Song</button>
+                <input type="file" id="songFileInput" accept="audio/*" style="display:none;" required>
+                <button type="submit">Add Song</button>
+            </form>
+        </section>
+
+        <!-- Playlist Section -->
+        <section id="playlist-section">
+            <h2>Your Playlist</h2>
+            <div class="song-container"></div>
+        </section>
+    </main>
+
+    <script src="upload.js"></script>
+</body>
+</html>
